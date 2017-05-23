@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  display: none;
+  display: none;
+}
+
+.why_angular {
+  background-color: #A9E5BB;
+  font-size: 1.5em;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.w_a_list_container {
+  padding: 50px;
+  margin-top: 30px;
+}
+
+.w_a_list {
+  text-align: left;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.w_a_list li {
+  margin-top: 10px;
+}
+
+.spa_container {
+  background-color: #FCF6B1;
+  height: 120vh;
+  width: 100vw;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ng_directives {
+  background-color: #F7B32B;
+  font-size: 1.5em;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ng_model_display {
+  margin-left: 20px;
+}
+
+.mvc_container {
+  background-color: #C73E1D;
+  height: 120vh;
+  width: 100vw;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mvc_img img {
+  height: 40vh;
+}
