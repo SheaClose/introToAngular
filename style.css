@@ -56,10 +56,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #F7B32B;
 }
 
-.ng_model_display {
-  margin-left: 20px;
-}
-
 .mvc_container {
   background-color: #C73E1D;
 }
@@ -107,9 +103,9 @@ blockquote {
 }
 
 .left_img img {
-  height: 40vh;
+  height: 50vh;
 }
 
 .right_img img {
-  height: 40vh;
+  height: 50vh;
 }
