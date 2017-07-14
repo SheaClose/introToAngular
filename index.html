@@ -67,7 +67,7 @@
     </div>
   </div>
   <div class="container scope" style="padding-top:15vh;">
-    <div class="">
+    <div class="w_a_list_container">
       <h1>$scope and Data-Binding</h1>
       <div class="">
         Scope is an object that refers to the application model. Scopes can watch expressions and propagate events.
@@ -77,7 +77,7 @@
           $scope:
         </div>
         <ul class="w_a_list">
-          <li class=""> $scope is JUST an object. There is nothing magic about it. It is an object that will have properties added to it (including methods), which are made accessible to the DOM via Data-Binding. </li>
+          <li class=""> $scope is JUST an object. There is nothing magic about it. It is an object that will have properties added to it. </li>
           <li class=""> Scope is the glue between application controller and the view. </li>
           <li class=""> Both controllers and the directives on the view have reference to the scope, but not to each other. This is an important point since it makes the controllers view agnostic. </li>
         </ul>
@@ -89,13 +89,8 @@
           <li class=""> This lets you treat the model as the single-source-of-truth. The view is a projection of the model at all times. </li>
           <li class=""> When the model changes, the view reflects the change, and vice versa. </li>
         </ul>
-        <div class="imgs">
-          <div class="right_img">
-            <img src="assets/One_Way_Data_Binding.png" alt="">
-          </div>
-          <div class="left_img">
-            <img src="assets/Two_Way_Data_Binding.png" alt="">
-          </div>
+        <div style="display:flex; justify-content:center" class="imgs">
+            <img stlye=""src="assets/Two_Way_Data_Binding.png" alt="">
         </div>
       </div>
     </div>
