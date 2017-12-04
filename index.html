@@ -11,38 +11,16 @@
 <body ng-controller="mainCtrl">
   <div class="container why_angular">
     <div class="w_a_body">
-      <h1>Why Angular?</h1>
-      <div class=""> JQuery’s code quickly becomes complicated and hard to read. Harder to maintain.</div>
+      <h1>Angular vs React</h1>
+      <div class=""> Both are SPA frameworks, but where as React takes a uni-directional and 'functional' approach, Angular is all about
+        that MVC.</div>
       <div class="w_a_list_container">
         <div class="w_a_list">
-          Angular is:
+
         </div>
         <ul class="w_a_list">
-          <li class=""> Modular<span>- Due to separation of concerns, you can keep your components small, focused, and easily pluggable.</span> </li>
-          <li class=""> DRY <span>- Because the components are small and focused, they are reusable, preventing repeated code.</span></li>
-          <li class=""> Readable <span>- No more spaghetti code, everything in its place.</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container spa_container">
-    <div class="w_a_body">
-      <h1>SPA Framework</h1>
-      <div class=""> SPA stands for Single Page Application. This means the entire Application takes place on a single URL. </div>
-      <div class="w_a_list_container">
-        <div class="w_a_list">
-          This is awesome because:
-        </div>
-        <ul class="w_a_list">
-          <li class=""> Responsive - Page reacts similar to native application because ther are not page loads for all navigation.</li>
-          <li class=""> Increased performance - because the HTML is sent in the initial request, only data is requested from servers, decreasing load time for each state change.</li>
-        </ul>
-        <div class="w_a_list">
-          Negatives:
-        </div>
-        <ul class="w_a_list">
-          <li class=""> Increased initial load time. Because we are loading all of the html templates up front, the initial load time is increased. </li>
-          <li class=""> SEO - Until very recently, search engines like Google and Bing had a difficult time crawling and indexing Single Page Applications. </li>
+          Angular is very opinionated. Much of the functionality is abstracted out. This can make Angular a little more difficult to
+          learn because things must be done the 'Angular' way, but once you learn it, the experience is very Dev friendly.
         </ul>
       </div>
     </div>
@@ -61,7 +39,8 @@
         <ul class="w_a_list">
           <li class="">The Model represents the business logic of your app</li>
           <li class="">The View is the app as displayed to the user.</li>
-          <li class="">The Controller is what handles the modification of the model and the view based on user interaction. We will have access to the Controller from the DOM via "$scope".</li>
+          <li class="">The Controller is what handles the modification of the model and the view based on user interaction. We will have
+            access to the Controller from the DOM via "$scope".</li>
         </ul>
       </div>
     </div>
@@ -77,20 +56,25 @@
           $scope:
         </div>
         <ul class="w_a_list">
-          <li class=""> $scope is JUST an object. There is nothing magic about it. It is an object that will have properties added to it. </li>
+          <li class=""> $scope is JUST an object. It is an object that will have properties added to it similar to a components state,
+            but with other neat functionality.
+          </li>
           <li class=""> Scope is the glue between application controller and the view. </li>
-          <li class=""> Both controllers and the directives on the view have reference to the scope, but not to each other. This is an important point since it makes the controllers view agnostic. </li>
+          <li class=""> Both controllers and the directives on the view have reference to the scope, but not to each other. This is an
+            important point since it makes the controllers view agnostic. (This is less important in component based architecture.</li>
         </ul>
         <div class="w_a_list">
           Data-Binding:
         </div>
         <ul class="w_a_list">
           <li class=""> Data-binding is the automatic synching of data between the model and view. </li>
-          <li class=""> This lets you treat the model as the single-source-of-truth. The view is a projection of the model at all times. </li>
+          <li class=""> This lets you treat the model as the single-source-of-truth. The view is a projection of the model at all times.
+            If any user interaction modifies the model, the view is automatically update to reflect the change.
+          </li>
           <li class=""> When the model changes, the view reflects the change, and vice versa. </li>
         </ul>
         <div style="display:flex; justify-content:center" class="imgs">
-            <img stlye=""src="assets/Two_Way_Data_Binding.png" alt="">
+          <img stlye="" src="assets/Two_Way_Data_Binding.png" alt="">
         </div>
       </div>
     </div>
@@ -98,8 +82,11 @@
   <div class="container ng_directives">
     <div class="directives_container">
       <h1>Angular Directives</h1>
-      <div class=""> Directives are very powerful, and handle the majority of the work for us. They allow us to establish links between the View and the Model. Directives have the ability to execute methods, define behavior, attach controllers and $scope objects, manipulate
-        the DOM, and <a href="https://docs.angularjs.org/api/ng/directive">more.</a> </div>
+      <div class=""> Directives are very powerful, and handle the majority of the work for us. They allow us to establish links between
+        the View and the Model. Directives have the ability to execute methods, define behavior, attach controllers and $scope
+        objects, manipulate the DOM, and
+        <a href="https://docs.angularjs.org/api/ng/directive">more.</a>
+      </div>
       <div ng-cloak class="w_a_list_container">
         <div class="w_a_list">
           Directives:
@@ -107,15 +94,18 @@
         <ul class="w_a_list">
 
           <li class="">
-            <h3>ng-app</h3> - It is added to set the AngularJS section. Any HTML element that is a child of this directive will be part of our Application. Should be set as a high-level Element (HTML/Body).
+            <h3>ng-app</h3> - It is added to set the AngularJS section. Any HTML element that is a child of this directive will
+            be part of our Application. Should be set as a high-level Element (HTML/Body).
           </li>
 
           <li class="">
-            <h3>ng-controller</h3> - It is used to attach a controller class to the view. This attribute sets which controller (and thus which $scope) our data is bound to.
+            <h3>ng-controller</h3> - It is used to attach a controller class to the view. This attribute sets which controller
+            (and thus which $scope) our data is bound to.
           </li>
 
           <li class="">
-            <h3>ng-click</h3> - It is used to execute a method or expression when element is clicked. Most commonly used on buttons, though it can be added to ANY HTML element.
+            <h3>ng-click</h3> - It is used to execute a method or expression when element is clicked. Most commonly used on buttons,
+            though it can be added to ANY HTML element.
           </li>
 
           <li class="">
@@ -125,7 +115,8 @@
             &lt;input type="text" ng-model="myInput"&gt;
             <br> &lt;li&gt; Display for ng-model: { { myInput } } &lt;/li&gt;
           </blockquote>
-          Input for ng-model: <input style="margin-top: 15px;" type="text" ng-model="myInput" name="" value="">
+          Input for ng-model:
+          <input style="margin-top: 15px;" type="text" ng-model="myInput" name="" value="">
           <div> Display for ng-model: {{myInput}} </div>
 
           <li class="">
@@ -165,8 +156,9 @@
             <p>&lt;button type="button" ng-show="show" ng-click="show = !show"&gt;Show Me!&lt;/button&gt;</p>
           </blockquote>
           <li class="">
-            <h3>ng-if</h3> - It is used to remove or recreate an element in the DOM depending on an expression. This differs from show/hide in that with show/hide, the element is on the DOM, but is set to "display: none". With ng-if, if the provided expression does
-            not evaluate to true, the element is not rendered to DOM at all.</li>
+            <h3>ng-if</h3> - It is used to remove or recreate an element in the DOM depending on an expression. This differs
+            from show/hide in that with show/hide, the element is on the DOM, but is set to "display: none". With ng-if,
+            if the provided expression does not evaluate to true, the element is not rendered to DOM at all.</li>
           <li ng-style="myStyle">
             <h3>ng-style</h3> - It is used to set CSS style on an HTML element conditionally.
             <button type="button" name="button" ng-click="!myStyle  ? myStyle = {'background-color':'yellow'} : myStyle = null">
@@ -174,14 +166,19 @@
             </button>
           </li>
           <blockquote>
-            &lt;li ng-style="myStyle"&gt;<br />
+            &lt;li ng-style="myStyle"&gt;
+            <br />
             <span style="margin-left: 20px;">&lt;p&gt;g-style - It is used to set CSS style on an HTML element conditionally.&lt;/p&gt;</span>
-            <span style="margin-left: 20px;"><br>&lt;button ng-click="!myStyle ? myStyle = {'background-color':'yellow'} : myStyle = null"&gt; Style &lt;/button&gt;</span> <br>&lt;/li&gt;
+            <span style="margin-left: 20px;">
+              <br>&lt;button ng-click="!myStyle ? myStyle = {'background-color':'yellow'} : myStyle = null"&gt; Style &lt;/button&gt;</span>
+            <br>&lt;/li&gt;
           </blockquote>
 
 
           <li ng-class="{strike : checked}">
-            <h3>ng-class</h3> - The ngClass directive allows you to dynamically set CSS classes on an HTML element by databinding an expression that represents all classes to be added. Strike Through:<input style="margin-left:10px;" type="checkbox" ng-model="checked"></input>
+            <h3>ng-class</h3> - The ngClass directive allows you to dynamically set CSS classes on an HTML element by databinding
+            an expression that represents all classes to be added. Strike Through:
+            <input style="margin-left:10px;" type="checkbox" ng-model="checked"></input>
           </li>
           <blockquote>
             &lt;li ng-class="{strike : checked}"&gt;
